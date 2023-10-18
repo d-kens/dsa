@@ -15,11 +15,26 @@ public class Main {
 
         // Testing the array class
         Array test = new Array(3);
-        test.insert(10);
-        test.insert(20);
+        test.insert(2);
         test.insert(30);
-        test.insert(70);
-        test.insert(100);
+        test.insert(1);
+        test.insert(20);
+        test.insert(19);
         test.print();
+        System.out.println(test.getCount());
+        test.removeAt(0);
+        test.print();
+
+
+        /*
+            1. pre-increment: ++index - This operator increments the value of the index by 1 before using its current value in an expression/assignment.
+                int index = 5;
+                int result = ++index; // result will be 6
+
+            2. post-increment - This operator uses the current value of the index in an expression or assignment and then increments it by 1.
+                int index = 5;
+                int result = index++; // result will be 5
+
+         */
     }
 }
