@@ -13,6 +13,7 @@ public class Main {
         System.out.println(Arrays.toString(values));
 
 
+        // Testing the array class
         Array test = new Array(3);
         test.insert(10);
         test.insert(20);
