@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalAccessException {
         int[] numbers = new int[3];
         numbers[0] = 10;
         numbers[1] = 20;
@@ -20,9 +20,7 @@ public class Main {
         test.insert(1);
         test.insert(20);
         test.insert(19);
-        test.print();
-        System.out.println(test.getCount());
-        test.removeAt(0);
+        test.removeAt(4);
         test.print();
 
 

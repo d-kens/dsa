@@ -20,20 +20,21 @@ public class Array {
 
     }
 
-    public void removeAt(int index){
-        int lastIndex = count - 1;
-        if(index == count) {
-            System.out.println("Index out of bounds");
-        }
+    public void removeAt(int index) throws IllegalAccessException {
+        /*
+            Solution
+             - Validate the index, make sure it is within the right range
+             - Shift the items to the left to fill the hole
+             - Decrement count by one
+         */
 
-        if(index == lastIndex) {
-            count = --count;
-        }
+        if(index < 0 || index >= count)
+            throw new IllegalAccessException();
 
-        for(int i = index; i < lastIndex; i++) {
-            items[i] = items[i++];
-        }
+        for(int i = index; i < count; i++)
+            items[i] = items[i + 1];
 
+        count--;
     }
 
     public void print() {
