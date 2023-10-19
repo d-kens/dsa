@@ -20,6 +20,7 @@ public class Main {
         test.insert(1);
         test.insert(20);
         test.insert(19);
+        System.out.println(test.indexOf(19));
         test.removeAt(4);
         test.print();
 
