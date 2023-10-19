@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -8,21 +9,20 @@ public class Main {
         numbers[2] = 30;
         System.out.println(Arrays.toString(numbers));
 
-        // cleaner way - when you know the array elements ahead of time
-        int[] values = {40, 50, 60, 70, 80, 90, 100};
-        System.out.println(Arrays.toString(values));
-
-
-        // Testing the array class
-        Array test = new Array(3);
-        test.insert(2);
-        test.insert(30);
-        test.insert(1);
-        test.insert(20);
-        test.insert(19);
-        System.out.println(test.indexOf(19));
-        test.removeAt(4);
-        test.print();
+        // ArrayList class
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(20);
+        list.add(30);
+        list.add(40);
+        list.add(50);
+        list.add(50);
+        list.remove(0);
+        System.out.println(list.indexOf(30));
+        System.out.println(list.lastIndexOf(50));
+        System.out.println(list.contains(10));
+        System.out.println(list.size());
+        list.toArray(); // converts the ArrayList to a regular array object
+        System.out.println(list);
 
 
         /*
