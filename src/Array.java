@@ -49,7 +49,6 @@ public class Array {
         for(int i = 0; i < count; i++)
             System.out.println(items[i]);
     }
-
     public int getCount() {
         return count;
     }
