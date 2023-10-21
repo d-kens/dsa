@@ -32,8 +32,19 @@ public class ScoreBoard {
                 board[j] = board[j-1];
                 j--;
             }
-            board[j] = e;      // when done add a entry
+            board[j] = e;      // when done add an entry
         }
+    }
+
+
+    public static void main(String[] args) {
+        ScoreBoard board = new ScoreBoard(10);
+        GameEntry e1 = new GameEntry("Dickens", 1000);
+        GameEntry e2 = new GameEntry("Micah", 800);
+        board.add(e1);
+        board.add(e2);
+
+
     }
 
 }
