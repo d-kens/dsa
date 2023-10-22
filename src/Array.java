@@ -1,3 +1,7 @@
+import UsingArrays.GameEntry;
+
+import java.lang.management.ManagementFactory;
+
 public class Array {
     private int[] items;
     private int count; // keeps track of the actual length of the array
@@ -37,6 +41,7 @@ public class Array {
         count--;
     }
 
+
     public int indexOf(int item) {
         for(int i = 0; i < count; i++)
             if(items[i] == item)
@@ -48,9 +53,6 @@ public class Array {
     public void print() {
         for(int i = 0; i < count; i++)
             System.out.println(items[i]);
-    }
-    public int getCount() {
-        return count;
     }
 
 }
