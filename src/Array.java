@@ -25,13 +25,6 @@ public class Array {
     }
 
     public void removeAt(int index) throws IllegalAccessException {
-        /*
-            Solution
-             - Validate the index, make sure it is within the right range
-             - Shift the items to the left to fill the hole
-             - Decrement count by one
-         */
-
         if(index < 0 || index >= count)
             throw new IllegalAccessException();
 
@@ -56,3 +49,8 @@ public class Array {
     }
 
 }
+
+/**
+ * Implementation of the ArrayClass using the Generic Framework
+ * Because it doesn't matter what type of element we store in the array.
+ */
