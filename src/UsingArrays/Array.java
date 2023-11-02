@@ -1,3 +1,5 @@
+package UsingArrays;
+
 import UsingArrays.GameEntry;
 
 import java.lang.management.ManagementFactory;
